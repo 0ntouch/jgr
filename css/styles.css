@@ -16,3 +16,20 @@ h1 {
 p {
 	color: yellow;
 }
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+#menu-button {
+  position: fixed;
+  width: 100px;
+  background-color: dimgray;
+  top: 20px;
+  left: 20px; /* Adjust the left position as needed */
+  z-index: 99999;
+}

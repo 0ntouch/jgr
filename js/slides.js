@@ -11,5 +11,10 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change slide every 2 seconds
+  setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
+
+window.onload = function() {
+   showSlides();
+}
+

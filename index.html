@@ -3,12 +3,16 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="stylesheet" href="css/menu.css"/>
+	<script src="js/menu.js"></script>
+	<script src="js/slides.js">
+		window.onload = function() {
+			showSlides();
+		}
+	</script>
 </head>
 <body>
-	<table>
-		<tr>
-			<td>
-				<!-- menu -->
+	<!-- menu -->
 				<!-- 
 				<nav>
 					<table>
@@ -30,72 +34,82 @@
 					</table>
 				</nav>
 			-->
-			</td>
-			<td colspan="2">
-				<!-- logo -->
-				<img src="images/logo.png">
-			</td>
-			<td>
-				<!-- directory -->
-			</td>
-		</tr>
-		<tr>
-			<td colspan="5" id="trending">
-				<!-- trending -->
-			</td>	
-		</tr>
-		<tr>
-			<td colspan="5">
-				<!-- slides -->
-				<iframe src="slides.html" frameborder="0" width="100%" height="400"></iframe>
-			</td>	
-		</tr>
-		<tr>
-			<td colspan="3">
-				<h1>
-					Latest 
-				</h1>
-			</td>
-			<td colspan="2">
-				<h1>
-					Popular
-				</h1>
-			</td>	
-		</tr>
-		<tr>
-			<td colspan="2">
-				<!-- straw-hats ranked -->
-			</td>
-			<td>
+			<button id="menu-button" onclick="toggleMenu()">Menu</button>
 
-			</td>
-			<td colspan="2">
-				<!-- most popular pokemon -->
-			</td>	
-		</tr>
-		<tr>
-			<td colspan="2">
-				<!-- best mario characters -->
-			</td>
-			<td>
+			<div id="overlay" class="overlay">
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<table>
+				<tr>
+					<td colspan="3" class="align-right">
+						<!-- logo -->
+						<img src="images/logo.png">
+					</td>
+					<td>
+						<!-- sign-up -->
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5" id="trending">
+						<!-- trending -->
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="5">
+						<!-- slides -->
+						<iframe src="slides.html" frameborder="0" width="100%" height="400"></iframe>
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="3">
+						<h1>
+							Latest 
+						</h1>
+					</td>
+					<td colspan="2">
+						<h1>
+							Popular
+						</h1>
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="2">
+						<!-- straw-hats ranked -->
+					</td>
+					<td>
 
-			</td>
-			<td colspan="2">
-				<!-- best shiny -->
-			</td>	
-		</tr>
-		<tr>
-			<td colspan="2">
-				<!-- straw-hats ranked -->
-			</td>
-			<td>
+					</td>
+					<td colspan="2">
+						<!-- most popular pokemon -->
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="2">
+						<!-- best mario characters -->
+					</td>
+					<td>
 
-			</td>
-			<td colspan="2">
-				<!-- most popular pokemon -->
-			</td>	
-		</tr>
-	</table>
-	<script src="js/slides.js"></script>
-</body>
-</html>
+					</td>
+					<td colspan="2">
+						<!-- best shiny -->
+					</td>	
+				</tr>
+				<tr>
+					<td colspan="2">
+						<!-- straw-hats ranked -->
+					</td>
+					<td>
+
+					</td>
+					<td colspan="2">
+						<!-- most popular pokemon -->
+					</td>	
+				</tr>
+			</table>	
+		</body>
+		</html>
