@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	color: silver;
 }
 table { 
 	height: 100%;
@@ -9,6 +10,10 @@ table {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	scroll-behavior: smooth;
+}
+td {
+	vertical-align: top;
 }
 h1 {
 	color: limegreen;
@@ -25,11 +30,23 @@ p {
 	text-align: left;
 }
 
+.align-center {
+	text-align: center;
+}
+
+
+
+.scrollit {
+    overflow:scroll;
+    height:100px;
+}
+
 #menu-button {
   position: fixed;
-  width: 100px;
+  width: 50px;
   background-color: dimgray;
   top: 20px;
   left: 20px; /* Adjust the left position as needed */
   z-index: 99999;
 }
+

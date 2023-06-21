@@ -14,7 +14,5 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
 
-window.onload = function() {
-   showSlides();
-}
+
 
