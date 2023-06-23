@@ -1,6 +1,7 @@
 function initSlides() {
     let slideIndex = 1;
     showSlides(slideIndex);
+    alert("hmm");
 }
 
 // Next/previous controls

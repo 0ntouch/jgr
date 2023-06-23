@@ -4,129 +4,104 @@
         <link rel="stylesheet" href="css/styles.css"/>
         <link rel="stylesheet" href="css/slides.css"/>
         <link rel="stylesheet" href="css/menu.css"/>
-        <script src="js/menu.js"></script>
-        <script src="js/slides.js">
-            window.onload = function() {
-                initSlides();
-        }
-        </script>
+        <script type="text/javascript" src="js/menu.js"/>
+        <script type="text/javascript" src="js/slides.js"/>
     </head>
-    <body>
-        <table>
-            <tr style="line-height: 140px;">
-                <td>
-                    <!-- menu -->
-                    <button id="menu-button" onclick="toggleMenu()">Menu</button>
-                    <div id="overlay" class="overlay">
-                        <ul class="menu">
-                            <li><a href="#trending">Trending</a></li>
-                            <li><a href="#newsletterr">Newsletter</a></li>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </td>
-                <td colspan="4" rowspan="2" class="align-center">
-                    <!-- logo -->
-                    <img src="images/logo.png" height="100px">
-                </td>
-                <td>
-                    <!-- sign-up -->
-                    sign up
-                </td>
-            </tr>
+    <body onload="onBodyLoad()">
 
-            <tr>
-                <td></td>
-                <td colspan="4" >
-                    <!-- slides -->
-                    <div class="slideshow-container">
+        <!-- menu -->
+        <button id="menu-button" onclick="toggleMenu()">Menu</button>
+        <div id="overlay" class="overlay">
+            <ul class="menu">
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#newsletterr">Newsletter</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
 
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="images/hi.jpg" style="width:50%">
-                        </div>
+        <!-- logo -->
+        <div>
+            <img src="images/logo.png" height="100px">
+        </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
-                            <img src="images/logo.png" style="width:50%">
-                        </div>
+        <!-- sign-up -->
+        <div>
+            sign up
+        </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="images/image3.jpg" style="width:50%">
-                        </div>
+        <!-- slides -->
+        <div class="slideshow-container">
 
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/hi.jpg" style="width:50%">
+            </div>
 
-                    <!-- The dots/circles -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                </td>
-                <td></td>
-            </tr>
-            <tr style="line-height: 90px;">
-                <td colspan="6" id="trending">
-                    <!-- trending -->
-                    trending
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <h1>
-                        Latest
-                    </h1>
-                </td>
-                <td colspan="3">
-                    <h1>
-                        Popular
-                    </h1>
-                    <p>
-                    hi
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <!-- straw-hats ranked -->
-                </td>
-                <td colspan="2">
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/logo.png" style="width:50%">
+            </div>
 
-                </td>
-                <td colspan="2">
-                    <!-- most popular pokemon -->
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <!-- best mario characters -->
-                </td>
-                <td colspan="2">
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/image3.jpg" style="width:50%">
+            </div>
 
-                </td>
-                <td colspan="2">
-                    <!-- best shiny -->
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <!-- straw-hats ranked -->
-                </td>
-                <td colspan="2">
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
 
-                </td>
-                <td colspan="2">
-                    <!-- most popular pokemon -->
-                </td>
-            </tr>
-        </table>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div>
+            <!-- trending -->
+            trending
+        </div>
+
+        <h1>
+            Latest
+        </h1>
+
+        <h1>
+            Popular
+        </h1>
+        <p>
+        hi
+        </p>
+
+        <div>
+            <!-- straw-hats ranked -->
+            straw-hats
+        </div>
+
+        <div>
+            <!-- most popular pokemon -->
+            pokemon
+        </div>
+
+        <div>
+            <!-- best mario characters -->
+            mario
+        </div>
+
+        <div>
+            <!-- best shiny -->
+            shiny
+        </div>
+
+        <script type="text/javascript">
+            function() onBodyLoad {
+                alert("ah");
+            }
+        </script>
     </body>
 </html>
